@@ -1,0 +1,58 @@
+/* (A) ENTIRE PAGE */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+#gro-wrap {
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* (B) ADD ITEM */
+#gro-form, input, button {
+  font-size: 16px;
+  padding: 10px;
+}
+#gro-form {
+  display: flex;
+  border: 1px solid #e3e3e3;
+  background: #f2f2f2;
+}
+button, input { border: 0; }
+input[type=number], input[type=text] { margin-right: 5px; }
+input[type=number] { width: 80px; }
+input[type=text] { flex-grow: 1; }
+button, input[type=button], input[type=submit] {
+  cursor: pointer;
+  color: #fff;
+  background: #df4949;
+}
+
+/* (C) ITEMS LIST */
+#gro-list { margin-top: 10px; }
+.item-row {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.item-row.yes {
+  border: 1px solid #68ff6d;
+  background: #e2ffe0;
+}
+.item-row.no {
+  border: 1px solid #ffc4c4;
+  background: #fff2f2;
+}
+.item-ok { background: none; }
+.item-row.yes .item-ok { color: #1fba1f; }
+.item-row.no .item-ok { color: #ca1717; }
+.item-del {
+  padding: 10px;
+  color: #a7a7a7;
+  cursor: pointer;
+}
+.item-name {
+  flex-grow: 1;
+  padding: 0 10px;
+}
