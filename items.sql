@@ -1,7 +1,3 @@
-create database test;
-
-use test;
-
 CREATE TABLE `items` (
   `id` bigint(20) NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 NOT NULL,
